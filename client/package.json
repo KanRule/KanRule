@@ -1,11 +1,11 @@
 {
-  "name": "jira_client",
-  "version": "1.0.0",
-  "author": "Ivor Reic",
+  "name": "kanrule_client",
+  "version": "1.0.1",
+  "author": "KanRule Team",
   "license": "MIT",
   "scripts": {
     "start": "webpack-dev-server",
-    "start:production": "pm2 start --name 'jira_client' server.js",
+    "start:production": "pm2 start --name 'kanrule_client' server.js",
     "test:jest": "jest",
     "test:cypress": "node_modules/.bin/cypress open",
     "build": "rm -rf build && webpack --config webpack.config.production.js --progress",

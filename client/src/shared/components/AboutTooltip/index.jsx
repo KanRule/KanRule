@@ -17,22 +17,19 @@ const AboutTooltip = tooltipProps => (
         </FeedbackImageCont>
 
         <FeedbackParagraph>
-          This simplified Jira clone is built with React on the front-end and Node/TypeScript on the
+          This simplified Kanban board is built with React on the front-end and Node/TypeScript on the
           back-end.
         </FeedbackParagraph>
 
         <FeedbackParagraph>
-          {'Read more on my website or reach out via '}
-          <a href="mailto:ivor@codetree.co">
-            <strong>ivor@codetree.co</strong>
-          </a>
+          {'Read more on website '}
         </FeedbackParagraph>
 
-        <a href="https://getivor.com/" target="_blank" rel="noreferrer noopener">
+        <a href="https://kanrule.com/" target="_blank" rel="noreferrer noopener">
           <Button variant="primary">Visit Website</Button>
         </a>
 
-        <a href="https://github.com/oldboyxx/jira_clone" target="_blank" rel="noreferrer noopener">
+        <a href="https://github.com/KanRule/KanRule" target="_blank" rel="noreferrer noopener">
           <Button style={{ marginLeft: 10 }} icon="github">
             Github Repo
           </Button>

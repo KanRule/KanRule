@@ -1,5 +1,5 @@
 FROM node:lts-alpine
-RUN adduser jira-clone --gecos GECOS --shell /bin/bash --disabled-password --home /app
+RUN adduser kanrule --gecos GECOS --shell /bin/bash --disabled-password --home /app
 COPY . /app
 WORKDIR /app
 RUN npm run install-dependencies && \

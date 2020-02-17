@@ -5,9 +5,9 @@ services:
     image: postgres:9.6-alpine
     restart: always
     environment:
-      - POSTGRES_USER=jira-clone
-      - POSTGRES_PASSWORD=jira-clone
-      - POSTGRES_DB=jira-clone
+      - POSTGRES_USER=kanrule
+      - POSTGRES_PASSWORD=kanrule
+      - POSTGRES_DB=kanrule
     networks:
       - default
     volumes:
@@ -20,9 +20,9 @@ services:
       - NODE_ENV=development
       - DB_HOST=db
       - DB_PORT=5432
-      - DB_USERNAME=jira-clone
-      - DB_PASSWORD=jira-clone
-      - DB_DATABASE=jira-clone
+      - DB_USERNAME=kanrule
+      - DB_PASSWORD=kanrule
+      - DB_DATABASE=kanrule
       ## Please change this string to something unique.
       - JWT_SECRET=development12345
     command: ["api"]
@@ -44,9 +44,9 @@ services:
       - NODE_ENV=development
       - DB_HOST=localhost
       - DB_PORT=5432
-      - DB_USERNAME=jira-clone
-      - DB_PASSWORD=jira-clone
-      - DB_DATABASE=jira-clone
+      - DB_USERNAME=kanrule
+      - DB_PASSWORD=kanrule
+      - DB_DATABASE=kanrule
       ## Please change this string to something unique.
       - JWT_SECRET=development12345
     depends_on:
