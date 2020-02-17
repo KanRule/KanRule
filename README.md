@@ -16,7 +16,9 @@
 
 ### From current maintainer of KanRule
 
-
+[xet7](https://github.com/xet7) is also current maintainer of [Wekan](https://wekan.github.io). This KanRule is a fork of another
+MIT licensed Open Source Kanban board, just to see can it be made usable enough. You can send pull requests to this project.
+There is no CLA required for contributing.
 
 ### From original creator oldboyxx:
 
