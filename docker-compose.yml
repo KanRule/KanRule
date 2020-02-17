@@ -9,13 +9,15 @@ services:
       - POSTGRES_PASSWORD=kanrule
       - POSTGRES_DB=kanrule
     networks:
-      - default
+      - kanrule
     volumes:
       - ./persist/db/git:/var/lib/postgresql/data
 
   api:
     build: .
     restart: always
+    ports:
+      - 9090:3000
     environment:
       - NODE_ENV=development
       - DB_HOST=db
@@ -29,7 +31,7 @@ services:
     depends_on:
       - db
     networks:
-      - default
+      - kanrule
 
   client:
     build: .
@@ -38,11 +40,11 @@ services:
     ports:
       - 8080:8080
     networks:
-      - default
+      - kanrule
     environment:
       - RUN_MODE=api
       - NODE_ENV=development
-      - DB_HOST=localhost
+      - DB_HOST=db
       - DB_PORT=5432
       - DB_USERNAME=kanrule
       - DB_PASSWORD=kanrule
@@ -54,4 +56,4 @@ services:
     command: ["client"]
 
 networks:
-  default:
+  kanrule:
