@@ -70,8 +70,8 @@ export const zIndexValues = {
 
 export const font = {
   regular: 'font-family: "Sans-serif"; font-weight: normal;',
-  medium: 'font-family: "Sans-serif"; font-weight: medium;',
-  bold: 'font-family: "Sans-serif"; font-weight: bold;',
+  medium: 'font-family: "Sans-serif"; font-weight: normal;',
+  bold: 'font-family: "Sans-serif"; font-weight: normal;',
   black: 'font-family: "Sans-serif"; font-weight: normal;',
   size: size => `font-size: ${size}px;`,
 };
