@@ -3,8 +3,12 @@ import React from 'react';
 import Button from 'shared/components/Button';
 import Tooltip from 'shared/components/Tooltip';
 
-import feedbackImage from './assets/feedback.png';
-import { FeedbackDropdown, FeedbackImageCont, FeedbackImage, FeedbackParagraph } from './Styles';
+// import feedbackImage from './assets/feedback.png';
+// <FeedbackImageCont>
+// <FeedbackImage src={feedbackImage} alt="Give feedback" />
+// </FeedbackImageCont>
+// import { FeedbackDropdown, FeedbackImageCont, FeedbackImage, FeedbackParagraph } from './Styles';
+import { FeedbackDropdown, FeedbackParagraph } from './Styles';
 
 const AboutTooltip = tooltipProps => (
   <Tooltip
@@ -12,18 +16,12 @@ const AboutTooltip = tooltipProps => (
     {...tooltipProps}
     renderContent={() => (
       <FeedbackDropdown>
-        <FeedbackImageCont>
-          <FeedbackImage src={feedbackImage} alt="Give feedback" />
-        </FeedbackImageCont>
-
         <FeedbackParagraph>
-          This simplified Kanban board is built with React on the front-end and Node/TypeScript on the
-          back-end.
+          This simplified Kanban board is built with React on the front-end and Node/TypeScript on
+          the back-end.
         </FeedbackParagraph>
 
-        <FeedbackParagraph>
-          {'Read more on website '}
-        </FeedbackParagraph>
+        <FeedbackParagraph>{'Read more on website '}</FeedbackParagraph>
 
         <a href="https://kanrule.com/" target="_blank" rel="noreferrer noopener">
           <Button variant="primary">Visit Website</Button>

@@ -1,4 +1,0 @@
-diff a/api/src/database/createConnection.ts b/api/src/database/createConnection.ts	(rejected hunks)
-@@ -5 +5 @@ import * as entities from 'entities';
--//if (process.env.DB_TYPE === 'sqlite') {
-+// if (process.env.DB_TYPE === 'sqlite') {
