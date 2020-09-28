@@ -26,7 +26,7 @@ const seedUsers = (): Promise<User[]> => {
 
 const seedProject = (users: User[]): Promise<Project> =>
   createEntity(Project, {
-    name: 'KanRule Board',
+    name: 'KanRule',
     url: 'https://kanrule.com',
     description:
       'Plan, track, and manage your agile and software development projects in KanRule. Customize your workflow, collaborate, and release great software.',

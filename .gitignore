@@ -13,3 +13,6 @@
 
 # Persistence Directory for Docker
 **/persist
+
+# Test database
+api/kanrule
