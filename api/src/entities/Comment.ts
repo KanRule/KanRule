@@ -23,10 +23,12 @@ class Comment extends BaseEntity {
   @Column('text')
   body: string;
 
-  @CreateDateColumn({ type: 'timestamp' })
+  // Postgres: timestamp. SQLite: datetime.
+  @CreateDateColumn({ type: 'datetime' })
   createdAt: Date;
 
-  @UpdateDateColumn({ type: 'timestamp' })
+  // Postgres: timestamp. SQLite: datetime.
+  @UpdateDateColumn({ type: 'datetime' })
   updatedAt: Date;
 
   @ManyToOne(

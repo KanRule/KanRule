@@ -33,10 +33,12 @@ class User extends BaseEntity {
   @Column('varchar', { length: 2000 })
   avatarUrl: string;
 
-  @CreateDateColumn({ type: 'timestamp' })
+  // Postgres: timestamp. SQLite: datetime.
+  @CreateDateColumn({ type: 'datetime' })
   createdAt: Date;
 
-  @UpdateDateColumn({ type: 'timestamp' })
+  // Postgres: timestamp. SQLite: datetime.
+  @UpdateDateColumn({ type: 'datetime' })
   updatedAt: Date;
 
   @OneToMany(

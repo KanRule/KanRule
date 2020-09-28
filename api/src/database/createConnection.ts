@@ -2,6 +2,19 @@ import { createConnection, Connection } from 'typeorm';
 
 import * as entities from 'entities';
 
+// if (process.env.DB_TYPE === 'sqlite') {
+
+const createDatabaseConnection = (): Promise<Connection> => {
+  return createConnection({
+    type: 'sqlite',
+    database: process.env.DB_DATABASE,
+    entities: Object.values(entities),
+    synchronize: true,
+  });
+};
+
+/*
+} else (process.env.DB_TYPE === 'postgres') {
 const createDatabaseConnection = (): Promise<Connection> =>
   createConnection({
     type: 'postgres',
@@ -13,5 +26,7 @@ const createDatabaseConnection = (): Promise<Connection> =>
     entities: Object.values(entities),
     synchronize: true,
   });
+}
+*/
 
 export default createDatabaseConnection;

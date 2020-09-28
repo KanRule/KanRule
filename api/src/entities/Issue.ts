@@ -63,10 +63,12 @@ class Issue extends BaseEntity {
   @Column('integer', { nullable: true })
   timeRemaining: number | null;
 
-  @CreateDateColumn({ type: 'timestamp' })
+  // Postgres: timestamp. SQLite: datetime.
+  @CreateDateColumn({ type: 'datetime' })
   createdAt: Date;
 
-  @UpdateDateColumn({ type: 'timestamp' })
+  // Postgres: timestamp. SQLite: datetime.
+  @UpdateDateColumn({ type: 'datetime' })
   updatedAt: Date;
 
   @Column('integer')

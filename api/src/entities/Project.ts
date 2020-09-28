@@ -35,10 +35,12 @@ class Project extends BaseEntity {
   @Column('varchar')
   category: ProjectCategory;
 
-  @CreateDateColumn({ type: 'timestamp' })
+  // Postgres: timestamp. SQLite: datetime.
+  @CreateDateColumn({ type: 'datetime' })
   createdAt: Date;
 
-  @UpdateDateColumn({ type: 'timestamp' })
+  // Postgres: timestamp. SQLite: datetime.
+  @UpdateDateColumn({ type: 'datetime' })
   updatedAt: Date;
 
   @OneToMany(
