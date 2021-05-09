@@ -23,7 +23,7 @@
     "reflect-metadata": "^0.1.13",
     "sqlite3": "^5.0.0",
     "striptags": "^3.1.1",
-    "typeorm": "^0.2.21"
+    "typeorm": "^0.2.25"
   },
   "devDependencies": {
     "@types/cors": "^2.8.6",
