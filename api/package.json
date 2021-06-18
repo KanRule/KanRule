@@ -22,7 +22,7 @@
     "pg": "^7.14.0",
     "reflect-metadata": "^0.1.13",
     "sqlite3": "^5.0.0",
-    "striptags": "^3.1.1",
+    "striptags": "^3.2.0",
     "typeorm": "^0.2.25"
   },
   "devDependencies": {
