@@ -10,7 +10,7 @@
     "start:production": "cd api && npm run start:production && cd ../client && npm run start:production"
   },
   "devDependencies": {
-    "husky": "^4.3.0"
+    "husky": "^7.0.4"
   },
   "husky": {
     "hooks": {
