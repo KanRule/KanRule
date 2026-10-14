@@ -42,7 +42,7 @@
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-prettier": "^3.1.1",
     "lint-staged": "^17.0.8",
-    "nodemon": "^3.1.14",
+    "nodemon": "^1.14.10",
     "prettier": "^1.19.1",
     "ts-node": "^8.5.2",
     "tsconfig-paths": "^3.9.0",
